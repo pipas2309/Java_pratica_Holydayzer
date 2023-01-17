@@ -36,14 +36,16 @@ public class App {
 
 
         if(question.equals("sim") || question.equals("s")) {
+            System.out.println();
             holidays.getAllHolidays().forEach(
-                holiDate -> System.out.println("Dia " + holiDate + " é feriado de " + holidays.getHoliday(holiDate) + "!")
+                holiDate -> System.out.println("Dia " + holiDate + " é feriado de " + holidays.getHoliday(holiDate) + ".")
             );
         } else if(question.equals("nao") || question.equals("n") || question.equals("não") ) {
             System.out.println("Ok!\n");
         } else {
             System.out.print("Vou considerar isso um não!\n");
         }
+        System.out.println();
         scanner.close();
     }
 }
