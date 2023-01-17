@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
 
+        System.out.println("\nColoque a data que você quer consultar\nse ela é ou não um feriado!");
+        System.out.println("Use o formato: DD/MM/AAAA,\npor exemplo: \"01/11/2000\"");
         Scanner scanner = new Scanner(System.in);
         String date = scanner.nextLine();
 
