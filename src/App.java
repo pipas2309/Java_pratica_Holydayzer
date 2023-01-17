@@ -35,7 +35,7 @@ public class App {
         String question = scanner.nextLine();
 
 
-        if(question.equals("sim")) {
+        if(question.equals("sim") || question.equals("s")) {
             holidays.getAllHolidays().forEach(
                 holiDate -> System.out.println("Dia " + holiDate + " é feriado de " + holidays.getHoliday(holiDate) + "!")
             );
